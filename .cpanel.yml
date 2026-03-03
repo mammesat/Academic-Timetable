@@ -1,0 +1,7 @@
+---
+deployment:
+  tasks:
+    # UPDATE THIS: Replace USERNAME with your cPanel username
+    # and adjust the folder if it's different from hawi.namuma.org
+    - export DEPLOYPATH=/home/USERNAME/public_html/hawi.namuma.org/
+    - /bin/cp -R * $DEPLOYPATH
