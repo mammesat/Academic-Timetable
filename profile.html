@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hawi Jemal - Student Profile</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="/src/profile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Navigation -->
+        <div class="top-bar">
+            <a href="index.html" class="top-bar-logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-graduation-cap">
+                    <path
+                        d="M21.42 10.922a2 2 0 0 0-.019-3.838L12.83 4.3a2 2 0 0 0-1.66 0l-8.57 2.784a2 2 0 0 0-.019 3.838l8.57 2.784a2 2 0 0 0 1.66 0z" />
+                    <path d="M22 10v6" />
+                    <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" />
+                </svg>
+                NAFYAD SCHOOL
+            </a>
+            <div class="nav-links">
+                <a href="index.html" class="btn-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-calendar-days" style="margin-right: 0.5rem;">
+                        <path d="M8 2v4" />
+                        <path d="M16 2v4" />
+                        <rect width="18" height="18" x="3" y="4" rx="2" />
+                        <path d="M3 10h18" />
+                        <path d="M8 14h.01" />
+                        <path d="M12 14h.01" />
+                        <path d="M16 14h.01" />
+                        <path d="M8 18h.01" />
+                        <path d="M12 18h.01" />
+                        <path d="M16 18h.01" />
+                    </svg>
+                    Timetable
+                </a>
+                <a href="docs.html" class="btn-secondary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-book-open" style="margin-right: 0.5rem;">
+                        <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                        <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                    </svg>
+                    Documentation
+                </a>
+            </div>
+        </div>
+
+        <main class="profile-main">
+            <!-- Hero Section -->
+            <section class="profile-hero fade-in">
+                <div class="profile-image-container">
+                    <!-- Placeholder SVG in case the image doesn't exist yet -->
+                    <div class="profile-placeholder">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-user">
+                            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                            <circle cx="12" cy="7" r="4" />
+                        </svg>
+                    </div>
+                    <img src="/src/assets/profile.png" alt="Hawi Jemal" class="profile-image"
+                        onerror="this.style.display='none'; this.previousElementSibling.style.display='flex';">
+                </div>
+                <h1 class="profile-name">Hawi Jemal</h1>
+                <h2 class="profile-title">Aspiring Full Stack Web Developer</h2>
+                <div class="academic-badges">
+                    <span class="badge">Grade 11</span>
+                    <span class="badge">Section E</span>
+                    <span class="badge">Age 18</span>
+                </div>
+            </section>
+
+            <div class="profile-grid">
+                <!-- About Me -->
+                <section class="profile-card fade-in delay-1">
+                    <div class="card-header">
+                        <span class="card-icon">👩‍💻</span>
+                        <h3>About Me</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Hi! I'm a student who loves learning how computers work. I really enjoy building websites,
+                            learning how to write code, and solving fun puzzles.</p>
+                        <p>My big dream is to become a Full Stack Web Developer. That means I want to know how to make
+                            both the beautiful front part of websites you see, and the secret databases behind them that
+                            make everything work together!</p>
+                    </div>
+                </section>
+
+                <!-- Academic Info -->
+                <section class="profile-card fade-in delay-2">
+                    <div class="card-header">
+                        <span class="card-icon">🏫</span>
+                        <h3>Academic Info</h3>
+                    </div>
+                    <div class="card-content">
+                        <ul class="info-list">
+                            <li>
+                                <strong>School:</strong>
+                                <span>NAFYAD SCHOOL</span>
+                            </li>
+                            <li>
+                                <strong>Website Teacher:</strong>
+                                <span>Mr. Sufian Abdulkadir</span>
+                            </li>
+                            <li>
+                                <strong>Current Focus:</strong>
+                                <span>Studing for ENTRANCE EXAM</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- Skills -->
+                <section class="profile-card fade-in delay-3">
+                    <div class="card-header">
+                        <span class="card-icon">⚡</span>
+                        <h3>Technical Skills</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="skills-container">
+                            <div class="skill-tag">HTML5</div>
+                            <div class="skill-tag">CSS</div>
+                            <div class="skill-tag">JavaScript</div>
+                            <div class="skill-tag">Front-end Design</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Goals -->
+                <section class="profile-card fade-in delay-4">
+                    <div class="card-header">
+                        <span class="card-icon">🎯</span>
+                        <h3>My Goals</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="goal-item">
+                            <h4>Short-Term</h4>
+                            <p>I want to practice building more websites from scratch using basic code, so I can become
+                                really good at making things work on the screen.</p>
+                        </div>
+                        <div class="goal-item">
+                            <h4>Long-Term</h4>
+                            <p>I want to go to a university to study Computer Science, and then get a cool job matching
+                                my career goal of building huge websites for people all over the world.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Contact -->
+                <section class="profile-card full-width fade-in delay-5">
+                    <div class="card-header">
+                        <span class="card-icon">📬</span>
+                        <h3>Get in Touch</h3>
+                    </div>
+                    <div class="card-content contact-content">
+                        <p>Feel free to reach out to me for school projects or discussions about learning to code!</p>
+                        <p style="font-size: 1.1rem; font-weight: 600; color: var(--primary); margin-top: 0.5rem;">
+                            hawijemal2k@gmail.com</p>
+                        <a href="mailto:hawijemal2k@gmail.com" class="btn-primary"
+                            style="display: inline-block; margin-top: 1rem;">Email Me</a>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <p id="footer-text">&copy; 2026 Developed by <a href="profile.html"
+                    style="color: inherit; text-decoration: none; font-weight: 600;">HAWI JEMAL</a>. - Student Portfolio
+            </p>
+        </footer>
+    </div>
+</body>
+
+</html>

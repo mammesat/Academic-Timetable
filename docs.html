@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation - Academic Timetable System</title>
+    <link rel="stylesheet" href="/src/docs.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="docs-body">
+    <nav class="docs-navbar">
+        <div class="docs-nav-content">
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-book-open">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                </svg>
+                <h1>System Documentation</h1>
+            </div>
+            <div class="nav-links">
+                <nav aria-label="Breadcrumb" class="breadcrumb">
+                    <ol>
+                        <li><a href="index.html">Home</a></li>
+                        <li aria-current="page">Documentation</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </nav>
+
+    <div class="docs-container">
+        <aside class="docs-sidebar">
+            <nav id="toc">
+                <ul>
+                    <li><a href="#overview" class="active">1. Project Overview</a></li>
+                    <li><a href="#html-explanation">2. HTML Explanation</a></li>
+                    <li><a href="#css-explanation">3. CSS Explanation</a></li>
+                    <li><a href="#js-explanation">4. JavaScript Explanation</a></li>
+                    <li><a href="#data-structure">5. Data Structure Explanation</a></li>
+                    <li><a href="#design-decisions">6. Design Decisions</a></li>
+                    <li><a href="#conclusion">7. Conclusion</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="docs-content">
+            <!-- SECTION 1 -->
+            <section id="overview" class="docs-section">
+                <h2>1. Project Overview</h2>
+                <h3>Purpose of the System</h3>
+                <p>Welcome to the Nafyad School Academic Timetable project! The main goal of this website is to show
+                    class schedules
+                    for Grade 11 and 12 students in a clean, easy-to-use digital format. Instead of looking at a printed
+                    paper or a picture on a phone, students can simply select their grade and section from a dropdown
+                    list, and the website will instantly display their weekly schedule. Furthermore, the website
+                    provides a personalized daily inspirational message to encourage students throughout their school
+                    week.</p>
+
+                <h3>How It Was Built (Static JSON Architecture)</h3>
+                <p>Think of this website as a smart digital notebook. It does not use a complex database (like a giant
+                    online filing cabinet) to store the schedules. Instead, it uses a simple text file called
+                    <code>schedule.json</code> that holds all the timetable information. Because it is simple, the
+                    website loads very fast and never crashes.
+                </p>
+
+                <h3>How Data Flows (JSON → JavaScript → HTML)</h3>
+                <p>Here is how the website gets the schedule and shows it to you on the screen:</p>
+                <ol>
+                    <li><strong>Asking for Data:</strong> When you open the page, JavaScript (our website's brain) goes
+                        to the <code>schedule.json</code> file and asks for the timetable data.</li>
+                    <li><strong>Reading the Data:</strong> JavaScript reads the file and translates it into a format it
+                        can understand.</li>
+                    <li><strong>Waiting for You:</strong> The website waits for you to pick a grade and a section from
+                        the menus.</li>
+                    <li><strong>Drawing the Table:</strong> When you make a choice, JavaScript finds your specific
+                        schedule in the data and builds a beautiful table (HTML) on the screen for you to see.</li>
+                </ol>
+            </section>
+
+            <!-- SECTION 2 -->
+            <section id="html-explanation" class="docs-section">
+                <h2>2. HTML Explanation</h2>
+                <p>HTML (HyperText Markup Language) is the skeleton or the building blocks of our website. It tells the
+                    browser what kind of content we have, like buttons, tables, or text.</p>
+
+                <h3>Document Basics</h3>
+                <div class="code-wrapper">
+                    <button class="copy-btn"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
+                            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
+                        </svg> Copy</button>
+                    <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Academic Timetable 2018&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;</code></pre>
+                </div>
+                <ul>
+                    <li><strong><code>&lt;!DOCTYPE html&gt;</code></strong>: This tells the web browser (like Chrome or
+                        Safari), "Hey, this is a modern HTML5 website!" Without this, the browser might try to display
+                        the page using older, broken rules.</li>
+                    <li><strong><code>&lt;html&gt;</code>, <code>&lt;head&gt;</code>,
+                            <code>&lt;body&gt;</code></strong>:
+                        <ul>
+                            <li>The <code>&lt;html&gt;</code> tag wraps everything.</li>
+                            <li>The <code>&lt;head&gt;</code> holds hidden information for the browser (like the title
+                                of the page or links to styles).</li>
+                            <li>The <code>&lt;body&gt;</code> contains everything you actually <em>see</em> on the
+                                screen.</li>
+                        </ul>
+                    </li>
+                    <li><strong><code>&lt;meta charset="UTF-8"&gt;</code></strong>: This rule ensures our website can
+                        display all characters, symbols, and numbers correctly without showing weird boxes or question
+                        marks.</li>
+                </ul>
+
+                <h3>Why Semantic Structure matters</h3>
+                <p>Instead of just throwing all our content onto the page randomly, we organize it using tags like
+                    <code>&lt;header&gt;</code> (for the top logo), <code>&lt;main&gt;</code> (for the main content),
+                    and <code>&lt;footer&gt;</code> (for the bottom text). This is like organizing a book into chapters.
+                    It makes the code easier for humans to read, and it helps tools like screen readers understand the
+                    page for people who are blind.
+                </p>
+
+                <h3>Dropdowns and Buttons</h3>
+                <div class="code-wrapper">
+                    <button class="copy-btn"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
+                            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
+                        </svg> Copy</button>
+                    <pre><code>&lt;select id="grade-select"&gt;
+    &lt;option value="" disabled selected&gt;Choose Grade&lt;/option&gt;
+    &lt;option value="11"&gt;Grade 11&lt;/option&gt;
+&lt;/select&gt;
+&lt;button id="print-btn" class="btn-secondary"&gt;Print&lt;/button&gt;</code></pre>
+                </div>
+                <ul>
+                    <li><strong><code>&lt;select&gt;</code> and <code>&lt;option&gt;</code></strong>: These create the
+                        dropdown menus. The <code>&lt;select&gt;</code> tag is the main box, and the
+                        <code>&lt;option&gt;</code> tags are the choices inside it (like Grade 11 or Grade 12).
+                    </li>
+                    <li><strong><code>&lt;button&gt;</code></strong>: This creates a clickable button. When you click
+                        it, we can tell JavaScript to do something specific, like opening the print menu.</li>
+                </ul>
+
+                <h3>Making the Table</h3>
+                <div class="code-wrapper">
+                    <button class="copy-btn"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
+                            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
+                        </svg> Copy</button>
+                    <pre><code>&lt;table id="timetable"&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Period / Day&lt;/th&gt;
+            &lt;th&gt;Monday&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody id="timetable-body"&gt;&lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+                </div>
+                <ul>
+                    <li><strong><code>&lt;table&gt;</code></strong>: This starts the grid.</li>
+                    <li><strong><code>&lt;tr&gt;</code> (Table Row)</strong>: This creates a horizontal row. Like a row
+                        of students sitting next to each other.</li>
+                    <li><strong><code>&lt;th&gt;</code> (Table Heading)</strong>: This creates a column title, usually
+                        bolded, like the days of the week.</li>
+                    <li><strong><code>&lt;td&gt;</code> (Table Data)</strong>: This is a single box (or cell) inside the
+                        table where we put a subject, like "MATHS" or "ENGLISH".</li>
+                </ul>
+
+                <h3>Why Keep Files Separated?</h3>
+                <p>We use external files for our design (<code>style.css</code>) and our code logic
+                    (<code>script.js</code>) instead of writing everything inside the HTML file. Why? Imagine if your
+                    house had the plumbing, electricity, and furniture all glued together in one giant lump. It would be
+                    impossible to fix anything! Keeping them in separate files keeps our code neat, organized, and much
+                    easier to read and fix.</p>
+            </section>
+
+            <!-- SECTION 3 -->
+            <section id="css-explanation" class="docs-section">
+                <h2>3. CSS Explanation</h2>
+                <p>CSS (Cascading Style Sheets) is the paint and decorations of our website. It takes plain HTML and
+                    makes it look colorful, organized, and pretty.</p>
+
+                <h3>Flexbox (Making Things Line Up)</h3>
+                <div class="code-wrapper">
+                    <button class="copy-btn"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
+                            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
+                        </svg> Copy</button>
+                    <pre><code>.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}</code></pre>
+                </div>
+                <p>Flexbox is a magical CSS tool that helps us put things exactly where we want them. In this code, we
+                    tell the header items to be in a vertical line (column) and to line up right in the middle (center).
+                </p>
+
+                <h3>Responsive Design (Looking Good on Phones)</h3>
+                <div class="code-wrapper">
+                    <button class="copy-btn"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
+                            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
+                        </svg> Copy</button>
+                    <pre><code>@media (max-width: 768px) {
+    .table-wrapper { display: none; }
+    .mobile-cards { display: flex; }
+}</code></pre>
+                </div>
+                <p>Have you noticed that websites look different on a laptop versus a small phone? That is called
+                    "Responsive Design." We use something called Media Queries (<code>@media</code>). This code says:
+                    "If the screen is smaller than 768 pixels, hide the big wide table and show small stacked cards
+                    instead so the user doesn't have to zoom in!"</p>
+
+                <h3>Hover Effects (Interactive Magic)</h3>
+                <p>When you move your mouse over a button and it changes color slightly, that is a hover effect. We use
+                    code like <code>.button:hover</code> to tell the browser: "When the mouse is over this, change how
+                    it looks!" It makes the website feel alive.</p>
+
+                <h3>Fixing Table Borders</h3>
+                <div class="code-wrapper">
+                    <button class="copy-btn"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
+                            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
+                        </svg> Copy</button>
+                    <pre><code>table { border-collapse: collapse; }</code></pre>
+                </div>
+                <p>By default, HTML tables draw an annoying double-line between all the boxes. Using
+                    <code>border-collapse</code> removes the gap and makes the table look like a clean grid, just like
+                    an Excel spreadsheet.
+                </p>
+
+                <h3>Gradients (Color Blends)</h3>
+                <p>A gradient is when one color slowly blends into another color. We use a <code>linear-gradient</code>
+                    to make the top menu bar look smooth and modern, rather than just using one boring flat color.</p>
+
+                <h3>10 Important CSS Rules We Used</h3>
+                <ol>
+                    <li><strong><code>display</code></strong>: Decides if an element acts like a block, flexbox, or
+                        disappears.</li>
+                    <li><strong><code>flex-direction</code></strong>: Decides if items flow side-by-side (row) or
+                        top-to-bottom (column).</li>
+                    <li><strong><code>gap</code></strong>: Adds space between flexbox items, like adding space between
+                        desks.</li>
+                    <li><strong><code>background-color</code></strong>: Sets the background color of a block.</li>
+                    <li><strong><code>border-radius</code></strong>: Rounds the sharp corners of boxes to make them look
+                        friendly.</li>
+                    <li><strong><code>box-shadow</code></strong>: Creates a shadow behind a box to make it look like
+                        it's floating.</li>
+                    <li><strong><code>transition</code></strong>: Makes changes happen smoothly (like a slow color
+                        change) instead of instantly.</li>
+                    <li><strong><code>margin</code></strong>: Adds space on the <em>outside</em> of a box pushing it
+                        away from other things.</li>
+                    <li><strong><code>padding</code></strong>: Adds space on the <em>inside</em> of a box, like adding
+                        bubble wrap inside a package.</li>
+                    <li><strong><code>color</code></strong>: Changes the color of the text.</li>
+                </ol>
+            </section>
+
+            <!-- SECTION 4 -->
+            <section id="js-explanation" class="docs-section">
+                <h2>4. JavaScript Explanation</h2>
+                <p>If HTML is the skeleton and CSS is the paint, JavaScript is the muscles. It is the programming
+                    language that makes our website actually <em>do</em> things (like grab schedule data and listen to
+                    your clicks).</p>
+
+                <h3>Getting Data with Fetch</h3>
+                <div class="code-wrapper">
+                    <button class="copy-btn"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
+                            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
+                        </svg> Copy</button>
+                    <pre><code>async function loadSchedule() {
+    try {
+        const response = await fetch('/src/schedule.json');
+        scheduleData = await response.json();
+    } catch (error) { ... }
+}</code></pre>
+                </div>
+                <ul>
+                    <li><strong>What <code>fetch()</code> does:</strong> Like sending a messenger to the library,
+                        <code>fetch()</code> goes and grabs our <code>schedule.json</code> file so we have data to read.
+                    </li>
+                    <li><strong>Why we use JSON:</strong> JSON (JavaScript Object Notation) is a simple way to write out
+                        lists and text that computers can understand very easily. It is basically the universal language
+                        of the web.</li>
+                    <li><strong>Error Handling:</strong> The <code>try</code> and <code>catch</code> code is a safety
+                        net. It means: "Try to get the schedule, but if something goes wrong (like the internet is off),
+                        catch the error so the whole website doesn't break."</li>
+                </ul>
+
+                <h3>Listening to Buttons (Events & DOM)</h3>
+                <div class="code-wrapper">
+                    <button class="copy-btn"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
+                            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
+                        </svg> Copy</button>
+                    <pre><code>const timetableBody = document.getElementById('timetable-body');
+gradeSelect.addEventListener('change', (event) =&gt; {
+    // Do something when the dropdown changes
+});</code></pre>
+                </div>
+                <ul>
+                    <li><strong>DOM Manipulation:</strong> The DOM is simply the HTML code on the page. DOM Manipulation
+                        means we use JavaScript to change that HTML while you're looking at it.</li>
+                    <li><strong><code>document.getElementById</code></strong>: This tells JavaScript to look at the HTML
+                        page and find a specific element using its unique ID tag. Like calling someone by their name.
+                    </li>
+                    <li><strong>Event Handling:</strong> An "event" is something the user does, like clicking or typing.
+                        <code>addEventListener</code> tells JavaScript: "Keep your ear to the ground and listen for when
+                        someone changes the dropdown menu, then do your job!"
+                    </li>
+                </ul>
+
+                <h3>Building the Real Table with Loops</h3>
+                <div class="code-wrapper">
+                    <button class="copy-btn"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="14" height="14" x="8" y="8" rx="2" ry="2" />
+                            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" />
+                        </svg> Copy</button>
+                    <pre><code>for (let p = 0; p &lt; 6; p++) {
+    const row = document.createElement('tr');
+    days.forEach(day =&gt; {
+        const td = document.createElement('td');
+        td.textContent = data[day][p];
+        row.appendChild(td);
+    });
+    timetableBody.appendChild(row);
+}</code></pre>
+                </div>
+                <ul>
+                    <li><strong>Arrays:</strong> Think of an array like a train. It's an organized list of cars attached
+                        together. We use an array to hold all the days of the week, or the 6 periods in a day in order.
+                    </li>
+                    <li><strong>Loops:</strong> A loop tells the computer to repeat an action. Instead of writing "make
+                        a row" 6 different times, we use a <code>for</code> loop to tell JavaScript: "Do this code
+                        exactly 6 times loudly to build 6 rows!"</li>
+                    <li><strong>Why Build Rows Dynamically?</strong> Because we have 11 different sections (11A, 12B,
+                        etc.). Instead of writing 11 different HTML tables manually (which would take hours), JavaScript
+                        writes the HTML automatically depending on what the user selects in just 1 second!</li>
+                </ul>
+            </section>
+
+            <!-- SECTION 5 -->
+            <section id="data-structure" class="docs-section">
+                <h2>5. Data Structure Explanation</h2>
+
+                <h3>How is the Schedule Saved?</h3>
+                <p>Our JSON file organizes data beautifully like folders on a computer:</p>
+                <ul>
+                    <li>First Folder: The Section Name (like "11A").</li>
+                    <li>Inside that folder: The Day of the Week (like "Monday").</li>
+                    <li>Inside that folder file: An ordered list (Array) of 6 subjects.</li>
+                </ul>
+
+                <h3>Why use Arrays for periods?</h3>
+                <p>An array guarantees the order stays exactly the same. The first subject in the list is always 1st
+                    Period. The fifth subject is always 5th period. It is very simple and prevents subjects from
+                    randomly jumbling together.</p>
+
+                <h3>How it survives without a Database</h3>
+                <p>Real databases (like passwords or YouTube accounts) need huge heavy servers to talk to. But a
+                    schedule almost never changes! Saving it as a simple text file means any small computer can run this
+                    website instantly without setting up complicated systems.</p>
+            </section>
+
+            <!-- SECTION 6 -->
+            <section id="design-decisions" class="docs-section">
+                <h2>6. Design Decisions</h2>
+                <ul>
+                    <li><strong>Why No Framework?</strong> Many developers use huge tools like React or Angular to build
+                        websites. But since this is a simple, fast project, we used Pure JavaScript (Vanilla JS). It's
+                        like riding a bicycle to the neighbor's house instead of renting a massive cargo truck. It keeps
+                        things fast and easy to understand.</li>
+                    <li><strong>Static Pages:</strong> Only having basic HTML, CSS, and JS files means our site is
+                        extremely fast. When you open the page, everything is already loaded and ready.</li>
+                    <li><strong>Security:</strong> There are no login pages, and we don't save any user data. Because
+                        the website relies only on a static file, it is impossible for hackers to steal information or
+                        break into back-end systems.</li>
+                    <li><strong>Speed:</strong> Because the JSON schedule file is so tiny, the website loads in the
+                        blink of an eye.</li>
+                    <li><strong>Limitations:</strong> The only downside? If English moves from 1st period to 2nd period,
+                        the principal can't just log into an admin panel and change it. A web developer has to go in and
+                        manually edit the <code>schedule.json</code> file to fix it.</li>
+                </ul>
+            </section>
+
+            <!-- SECTION 7 -->
+            <section id="conclusion" class="docs-section">
+                <h2>7. Conclusion</h2>
+                <p>This Academic Timetable is a perfect example of keeping things simple, fast, and user-friendly. By
+                    using the core languages of the internet—HTML, CSS, and JavaScript—we created a powerful and helpful
+                    tool without needing complicated heavy software. It loads instantly, works beautifully on both
+                    phones and computers, and gives students exactly the information they need in seconds.</p>
+            </section>
+        </main>
+    </div>
+
+    <script src="/src/docs.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,464 @@
+{
+  "11A": {
+    "Monday": [
+      "HISTORY",
+      "GEOGRAPHY",
+      "MATHS",
+      "ACCOUNTING",
+      "ENGLISH",
+      "ICT"
+    ],
+    "Tuesday": [
+      "ENGLISH",
+      "MATHS",
+      "HISTORY",
+      "MARKETING",
+      "ICT WEB",
+      "ECONOMICS"
+    ],
+    "Wednesday": [
+      "MATHS",
+      "GEOGRAPHY",
+      "ECONOMICS",
+      "ENGLISH",
+      "HISTORY",
+      "ACCOUNTING"
+    ],
+    "Thursday": [
+      "GEOGRAPHY",
+      "ENGLISH",
+      "ECONOMICS",
+      "MATHS",
+      "LIFE LITERACY",
+      "HISTORY"
+    ],
+    "Friday": [
+      "MATHS",
+      "ECONOMICS",
+      "GEOGRAPHY",
+      "ENGLISH",
+      "MARKETING",
+      "HISTORY"
+    ]
+  },
+  "11B": {
+    "Monday": [
+      "GEOGRAPHY",
+      "HISTORY",
+      "ENGLISH",
+      "ICT",
+      "MATHS",
+      "ECONOMICS"
+    ],
+    "Tuesday": [
+      "MARKETING",
+      "ENGLISH",
+      "ECONOMICS",
+      "HISTORY",
+      "GEOGRAPHY",
+      "MATHS"
+    ],
+    "Wednesday": [
+      "MARKETING",
+      "ICT",
+      "LIFE LITERACY",
+      "MATHS",
+      "ENGLISH",
+      "HISTORY"
+    ],
+    "Thursday": [
+      "ACCOUNTING",
+      "ECONOMICS",
+      "HISTORY",
+      "GEOGRAPHY",
+      "ENGLISH",
+      "MATHS"
+    ],
+    "Friday": [
+      "ECONOMICS",
+      "ACCOUNTING",
+      "ENGLISH",
+      "GEOGRAPHY",
+      "MATHS",
+      "HISTORY"
+    ]
+  },
+  "11C": {
+    "Monday": [
+      "PHYSICS",
+      "MATHS",
+      "BIOLOGY",
+      "AGRICULTURE",
+      "LIFE LITERACY",
+      "ENGLISH"
+    ],
+    "Tuesday": [
+      "MATHS",
+      "ICT WEB",
+      "BIOLOGY",
+      "PHYSICS",
+      "ENGLISH",
+      "CHEMISTRY"
+    ],
+    "Wednesday": [
+      "ENGLISH",
+      "MATHS",
+      "PHYSICS",
+      "AGRICULTURE",
+      "ICT WEB",
+      "CHEMISTRY"
+    ],
+    "Thursday": [
+      "MATHS",
+      "PHYSICS",
+      "HELTH",
+      "ENGLISH",
+      "CHEMISTRY",
+      "ICT WEB"
+    ],
+    "Friday": [
+      "BIOLOGY",
+      "ENGLISH",
+      "CHEMISTRY",
+      "ICT WEB",
+      "HELTH",
+      "MATHS"
+    ]
+  },
+  "11D": {
+    "Monday": [
+      "HELTH",
+      "AGRICULTURE",
+      "CHEMISTRY",
+      "ENGLISH",
+      "BIOLOGY",
+      "MATHS"
+    ],
+    "Tuesday": [
+      "ICT WEB",
+      "AGRICULTURE",
+      "MATHS",
+      "CHEMISTRY",
+      "PHYSICS",
+      "ENGLISH"
+    ],
+    "Wednesday": [
+      "LIFE LITERACY",
+      "ENGLISH",
+      "MATHS",
+      "ICT WEB",
+      "BIOLOGY",
+      "PHYSICS"
+    ],
+    "Thursday": [
+      "ENGLISH",
+      "HELTH",
+      "MATHS",
+      "PHYSICS",
+      "ICT WEB",
+      "CHEMISTRY"
+    ],
+    "Friday": [
+      "ICT WEB",
+      "MATHS",
+      "PHYSICS",
+      "BIOLOGY",
+      "ENGLISH",
+      "CHEMISTRY"
+    ]
+  },
+  "11E": {
+    "Monday": [
+      "CHEMISTRY",
+      "ENGLISH",
+      "PHYSICS",
+      "MATHS",
+      "ICT WEB",
+      "AGRICULTURE"
+    ],
+    "Tuesday": [
+      "BIOLOGY",
+      "PHYSICS",
+      "ENGLISH",
+      "MATHS",
+      "CHEMISTRY",
+      "ICT WEB"
+    ],
+    "Wednesday": [
+      "CHEMISTRY",
+      "AGRICULTURE",
+      "ENGLISH",
+      "BIOLOGY",
+      "LIFE LITERACY",
+      "MATHS"
+    ],
+    "Thursday": [
+      "HELTH",
+      "ICT WEB",
+      "PHYSICS",
+      "BIOLOGY",
+      "MATHS",
+      "ENGLISH"
+    ],
+    "Friday": [
+      "ENGLISH",
+      "HELTH",
+      "ICT WEB",
+      "MATHS",
+      "CHEMISTRY",
+      "PHYSICS"
+    ]
+  },
+  "12A": {
+    "Monday": [
+      "ECONOMICS",
+      "HISTORY",
+      "GEOGRAPHY",
+      "MATHS",
+      "MARKETING",
+      "ENGLISH"
+    ],
+    "Tuesday": [
+      "MATHS",
+      "ECONOMICS",
+      "GEOGRAPHY",
+      "ENGLISH",
+      "ICT",
+      "HISTORY"
+    ],
+    "Wednesday": [
+      "ENGLISH",
+      "ECONOMICS",
+      "GEOGRAPHY",
+      "MATHS",
+      "MARKETING",
+      "HISTORY"
+    ],
+    "Thursday": [
+      "ENGLISH",
+      "MATHS",
+      "GEOGRAPHY",
+      "ECONOMICS",
+      "ICT",
+      "HISTORY"
+    ],
+    "Friday": [
+      "GEOGRAPHY",
+      "ENGLISH",
+      "ECONOMICS",
+      "MATHS",
+      "LIFE LITERACY",
+      "HISTORY"
+    ]
+  },
+  "12B": {
+    "Monday": [
+      "HISTORY",
+      "ECONOMICS",
+      "MARKETING",
+      "ENGLISH",
+      "MATHS",
+      "GEOGRAPHY"
+    ],
+    "Tuesday": [
+      "GEOGRAPHY",
+      "ICT",
+      "ENGLISH",
+      "ECONOMICS",
+      "HISTORY",
+      "MATHS"
+    ],
+    "Wednesday": [
+      "MATHS",
+      "LIFE LITERACY",
+      "ENGLISH",
+      "ECONOMICS",
+      "HISTORY",
+      "GEOGRAPHY"
+    ],
+    "Thursday": [
+      "MARKETING",
+      "GEOGRAPHY",
+      "ENGLISH",
+      "MATHS",
+      "HISTORY",
+      "ECONOMICS"
+    ],
+    "Friday": [
+      "ENGLISH",
+      "GEOGRAPHY",
+      "ICT",
+      "ECONOMICS",
+      "HISTORY",
+      "MATHS"
+    ]
+  },
+  "12C": {
+    "Monday": [
+      "BIOLOGY",
+      "ENGLISH",
+      "AGRICULTURE",
+      "PHYSICS",
+      "CHEMISTRY",
+      "MATHS"
+    ],
+    "Tuesday": [
+      "AGRICULTURE",
+      "CHEMISTRY",
+      "ICT",
+      "BIOLOGY",
+      "MATHS",
+      "ENGLISH"
+    ],
+    "Wednesday": [
+      "BIOLOGY",
+      "ENGLISH",
+      "MATHS",
+      "PHYSICS",
+      "CHEMISTRY",
+      "LIFE LITERACY"
+    ],
+    "Thursday": [
+      "AGRICULTURE",
+      "CHEMISTRY",
+      "MATHS",
+      "ENGLISH",
+      "BIOLOGY",
+      "PHYSICS"
+    ],
+    "Friday": [
+      "MATHS",
+      "ICT",
+      "LIFE LITERACY",
+      "ENGLISH",
+      "PHYSICS",
+      "BIOLOGY"
+    ]
+  },
+  "12D": {
+    "Monday": [
+      "ENGLISH",
+      "MATHS",
+      "ICT",
+      "CHEMISTRY",
+      "PHYSICS",
+      "BIOLOGY"
+    ],
+    "Tuesday": [
+      "PHYSICS",
+      "ENGLISH",
+      "CHEMISTRY",
+      "MATHS",
+      "AGRICULTURE",
+      "BIOLOGY"
+    ],
+    "Wednesday": [
+      "PHYSICS",
+      "MATHS",
+      "AGRICULTURE",
+      "CHEMISTRY",
+      "ENGLISH",
+      "BIOLOGY"
+    ],
+    "Thursday": [
+      "PHYSICS",
+      "AGRICULTURE",
+      "BIOLOGY",
+      "LIFE LITERACY",
+      "ENGLISH",
+      "MATHS"
+    ],
+    "Friday": [
+      "CHEMISTRY",
+      "BIOLOGY",
+      "MATHS",
+      "ICT",
+      "ENGLISH",
+      "LIFE LITERACY"
+    ]
+  },
+  "12E": {
+    "Monday": [
+      "AGRICULTURE",
+      "PHYSICS",
+      "MATHS",
+      "BIOLOGY",
+      "ENGLISH",
+      "CHEMISTRY"
+    ],
+    "Tuesday": [
+      "ENGLISH",
+      "MATHS",
+      "PHYSICS",
+      "ICT",
+      "BIOLOGY",
+      "AGRICULTURE"
+    ],
+    "Wednesday": [
+      "ICT",
+      "BIOLOGY",
+      "CHEMISTRY",
+      "ENGLISH",
+      "PHYSICS",
+      "MATHS"
+    ],
+    "Thursday": [
+      "LIFE LITERACY",
+      "ENGLISH",
+      "AGRICULTURE",
+      "CHEMISTRY",
+      "MATHS",
+      "BIOLOGY"
+    ],
+    "Friday": [
+      "LIFE LITERACY",
+      "CHEMISTRY",
+      "BIOLOGY",
+      "PHYSICS",
+      "MATHS",
+      "ENGLISH"
+    ]
+  },
+  "12F": {
+    "Monday": [
+      "MATHS",
+      "BIOLOGY",
+      "ENGLISH",
+      "ICT",
+      "AGRICULTURE",
+      "PHYSICS"
+    ],
+    "Tuesday": [
+      "CHEMISTRY",
+      "BIOLOGY",
+      "MATHS",
+      "AGRICULTURE",
+      "ENGLISH",
+      "PHYSICS"
+    ],
+    "Wednesday": [
+      "AGRICULTURE",
+      "CHEMISTRY",
+      "BIOLOGY",
+      "LIFE LITERACY",
+      "MATHS",
+      "ENGLISH"
+    ],
+    "Thursday": [
+      "MATHS",
+      "BIOLOGY",
+      "CHEMISTRY",
+      "LIFE LITERACY",
+      "PHYSICS",
+      "ENGLISH"
+    ],
+    "Friday": [
+      "PHYSICS",
+      "MATHS",
+      "ENGLISH",
+      "CHEMISTRY",
+      "BIOLOGY",
+      "ICT"
+    ]
+  }
+}
