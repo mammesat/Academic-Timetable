@@ -165,7 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const footerText = document.querySelector('footer p');
     if (footerText) {
         const currentYear = new Date().getFullYear();
-        footerText.innerHTML = `&copy; ${currentYear} Developed by <a href="profile.html" style="color: inherit; text-decoration: none; font-weight: 600;">HAWI JEMAL</a>. - Revised Timetable`;
+        footerText.innerHTML = `&copy; ${currentYear} Developed by <a href="profile.html" style="color: inherit; text-decoration: none; font-weight: 600;">HAWI JEMAL</a>. - Timetable`;
     }
 
     // --- Daily Inspiration Logic ---
